@@ -5,6 +5,12 @@
 	height: 0;
 }
 
+.video {
+	padding: 20px;
+	background-color: #FAFAFA;
+	border: 1px solid #DDDDDD;
+}
+
 .video-container iframe {
 	position: absolute;
 	top: 0;
@@ -15,8 +21,4 @@
 	padding: 10px;
 	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
-
-	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
-	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
-	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05);
 }

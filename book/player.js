@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
-	$("div.video-container").each(function() {
+	$("div.video").each(function() {
+		$(this).removeClass('video').addClass('video-container');
      	$(this).html('<iframe src="https://www.youtube.com/embed/' + $(this).data('config').id + '" allowfullscreen width="100%" height="100%"></iframe>')
-}	);
+	});
 
 });
