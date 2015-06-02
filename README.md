@@ -7,7 +7,7 @@ This is a plugin for inserting YouTube videos in GitBook.
 Youtube videos can be inserted into a gitbook chapter using a tag with the video id inserted inbetween:
 
 ```
-{%youtube%}dQw4w9WgXcQ{%endyoutube}
+{%youtube%}dQw4w9WgXcQ{%endyoutube%}
 ```
 
 ## Feature
