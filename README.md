@@ -1,4 +1,5 @@
-# GitBook YouTube Plugin
+GitBook YouTube Plugin
+===
 
 This is a plugin for inserting YouTube videos in GitBook.
 
