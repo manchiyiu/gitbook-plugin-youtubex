@@ -18,7 +18,7 @@ module.exports = {
             process: function(blk) {
 
                 var obj = {id: blk.body};
-                return '<div class="video" data-config=' + JSON.stringify(obj) + '><i>Embedded video:</i>  <a href="https://www.youtube.com/watch?v=' + blk.body + '">' + 'https://www.youtube.com/watch?v=' + blk.body + '</a> </div>';
+                return '<div class="video" data-config=' + JSON.stringify(obj) + '><b>Embedded video:</b>  <a href="https://www.youtube.com/watch?v=' + blk.body + '">' + 'https://www.youtube.com/watch?v=' + blk.body + '</a> </div>';
             }
         }
     }
