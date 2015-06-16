@@ -11,7 +11,12 @@ Youtube videos can be inserted into a gitbook chapter using a tag with the video
 {%youtube%}dQw4w9WgXcQ{%endyoutube%}
 ```
 
-Please note that there should not be any space character following the video id.
+See the plugin at work here: [Click here](http://ymcatar.gitbooks.io/gitbook-test/content/testing_video.html)
+
+## Changelog
+
+* 0.2 Releases:
+	* **0.2.0:** Improved looks and feels.
 
 ## Feature
 

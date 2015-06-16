@@ -1,8 +1,7 @@
 module.exports = {
 
-    // Extend ebook resources and html
     website: {
-        assets: "./book",
+        assets: "./assets",
         css: [
             "player.css"
         ],
@@ -11,14 +10,10 @@ module.exports = {
         ]
     },
 
-    // Extend templating blocks
     blocks: {
-        // Author will be able to write "{% myTag %}World{% endMyTag %}"
         youtube: {
             process: function(blk) {
-
-                var obj = {id: blk.body};
-                return '<div class="video" data-config=' + JSON.stringify(obj) + '><b>Embedded video:</b>  <a href="https://www.youtube.com/watch?v=' + blk.body + '">' + 'https://www.youtube.com/watch?v=' + blk.body + '</a> </div>';
+                return '<div class="youtubex-video" data-config=' + blk.body.trim() + '><b>Embedded Video:&nbsp;</b><a href="https://www.youtube.com/watch?v=' + blk.body + '">' + 'https://www.youtube.com/watch?v=' + blk.body + '</a> </div>';
             }
         }
     }
