@@ -15,6 +15,9 @@ See the plugin at work here: [Click here](http://ymcatar.gitbooks.io/gitbook-tes
 
 ## Changelog
 
+* 0.3 Releases:
+	* **0.3.0:** Added check to terminate the book generation if the id contain invalid characters.
+
 * 0.2 Releases:
 	* **0.2.1:** Fixed broken link in the documentation.
 	* **0.2.0:** Improved looks and feels.
