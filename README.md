@@ -26,6 +26,7 @@ See the plugin here: [Click here](http://ymcatar.gitbooks.io/gitbook-test/conten
 ## Changelog
 
 * 1.0 Releases:
+	* **1.0.2:** Fix API script loading problem.
 	* **1.0.1:** Fix time marker.
 	* **1.0.0:** Now using YouTube iFrame API to power the plugin. Added support for adding time markers to control video progress.
 

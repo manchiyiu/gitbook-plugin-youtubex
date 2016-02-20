@@ -25,8 +25,13 @@ window.onYouTubeIframeAPIReady = function() {
 };
 
 require(["gitbook", "jquery"], function(gitbook, $) {
-    gitbook.events.bind("page.change", function() {
-        $.getScript("https://www.youtube.com/iframe_api");
-        window.onYouTubeIframeAPIReady();
-    });
+
+    function init() {
+        $.getScript("https://www.youtube.com/iframe_api")
+            .done(function(){
+                window.onYouTubeIframeAPIReady();
+            });
+    }
+
+    gitbook.events.bind("page.change", init);
 });
