@@ -45,8 +45,8 @@ module.exports = {
                 var time = h * 3600 + m * 60 + s;
                 var timeString = '';
                 timeString += (h !== 0)? (h < 10? '0'+h: h) + ':': '';
-                timeString += (m !== 0)? (m < 10? '0'+m: m) + ':': '';
-                timeString += (s < 10? '0'+s: s);
+                timeString += (m < 10? '0'+m : m) + ':';
+                timeString += (s < 10? '0'+s : s);
 
                 return '<a href="#" class="skip_' + id + '" data-time="' + time + '">' + timeString + '</a>';
             }
