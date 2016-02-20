@@ -11,9 +11,22 @@ Youtube videos can be inserted into a gitbook chapter using a tag with the video
 {%youtube%}dQw4w9WgXcQ{%endyoutube%}
 ```
 
-See the plugin at work here: [Click here](http://ymcatar.gitbooks.io/gitbook-test/content/testing_youtubex.html)
+You can also add a time marker in your text. Upon clicking it, the video will travel to the time specified by the marker.
+
+```
+{%m id="dQw4w9WgXcQ", m=23, s=40%}{%endm%}
+```
+
+* ```h```: hour
+* ```m```: minute
+* ```s```: second
+
+See the plugin here: [Click here](http://ymcatar.gitbooks.io/gitbook-test/content/testing_youtubex.html)
 
 ## Changelog
+
+* 1.0 Releases:
+	* **1.0.0:** Now using YouTube iFrame API to power the plugin. Added support for adding time markers to control video progress.
 
 * 0.3 Releases:
 	* **0.3.0:** Added check to terminate the book generation if the id contain invalid characters.
