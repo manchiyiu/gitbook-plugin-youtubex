@@ -48,7 +48,7 @@ module.exports = {
                 timeString += (m < 10? '0'+m : m) + ':';
                 timeString += (s < 10? '0'+s : s);
 
-                return '<a href="#" class="skip_' + id + '" data-time="' + time + '">' + timeString + '</a>';
+                return '<a href="#' + id + '" class="skip_' + id + '" data-time="' + time + '">' + timeString + '</a>';
             }
         }
     }
