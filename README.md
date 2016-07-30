@@ -48,13 +48,22 @@ See the plugin here: [Click here](http://ymcatar.gitbooks.io/gitbook-test/conten
 
 ## Changelog
 
+* 2.0 Releases:
+  * **2.0.0**: (requires gitbook 3.0+ now)
+    * auto scroll to video when time marker clicked (thanks @noerw)
+    * added locale support (thanks @noerw)
+    * better way for loading the youtube api script
+
+
 * 1.0 Releases:
 	* **1.0.2:** Fix API script loading problem.
 	* **1.0.1:** Fix time marker.
 	* **1.0.0:** Now using YouTube iFrame API to power the plugin. Added support for adding time markers to control video progress.
 
+
 * 0.3 Releases:
 	* **0.3.0:** Added check to terminate the book generation if the id contain invalid characters.
+
 
 * 0.2 Releases:
 	* **0.2.1:** Fixed broken link in the documentation.

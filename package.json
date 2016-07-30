@@ -1,36 +1,36 @@
 {
-    "name": "gitbook-plugin-youtubex",
-    "description": "YouTube plugin for GitBook",
-    "main": "index.js",
-    "version": "1.0.2",
-    "engines": {
-        "gitbook": ">1.x.x"
-    },
-    "gitbook": {
+  "name": "gitbook-plugin-youtubex",
+  "description": "YouTube plugin for GitBook",
+  "main": "index.js",
+  "version": "2.0.0",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
+  "gitbook": {
+    "properties": {
+      "embedDescription": {
+        "type": "object",
+        "description": "Text that is prepended embed replacement link in eBooks/PDFs",
         "properties": {
-            "embedDescription": {
-                "type": "object",
-                "description": "Text that is prepended embed replacement link in eBooks/PDFs",
-                "properties": {
-                    "de": {
-                        "type": "string",
-                        "default": "Eingebettetes Video:"
-                    },
-                    "default": {
-                        "type": "string",
-                        "default": "Embedded video:"
-                    }
-                }
-            }
+          "de": {
+            "type": "string",
+            "default": "Eingebettetes Video:"
+          },
+          "default": {
+            "type": "string",
+            "default": "Embedded video:"
+          }
         }
-    },
-    "homepage": "https://github.com/ymcatar/gitbook-plugin-youtubex",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ymcatar/gitbook-plugin-youtubex.git"
-    },
-    "license": "GPL-3.0",
-    "bugs": {
-        "url": "https://github.com/ymcatar/gitbook-plugin-youtubex/issues"
+      }
     }
+  },
+  "homepage": "https://github.com/ymcatar/gitbook-plugin-youtubex",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ymcatar/gitbook-plugin-youtubex.git"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ymcatar/gitbook-plugin-youtubex/issues"
+  }
 }
