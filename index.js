@@ -2,26 +2,20 @@ module.exports = {
 
     website: {
         assets: "./assets",
-        js: [
-            "player.js"
-        ],
-        css: [
-            "player.css"
-        ]
+        js: ["player.js"],
+        css: ["player.css"]
     },
 
     blocks: {
         youtube: {
             process: function(blk) {
-                var vid = blk.body.trim();
+                var cfg = this.config.values.pluginsConfig["youtubex"],
+                    vid = blk.body.trim().replace(/['"\/]+/g, ''),
+                    lang = this.options.language,
+                    embedString = cfg.embedDescription[lang] || cfg.embedDescription["default"];
 
                 if(vid.length === 0) {
                   console.log('\n[gitbook-plugin-youtubex]('+this.ctx.file.path+') Error: video ID is empty.');
-                  return null;
-                }
-
-                if(vid.indexOf("'") > -1 || vid.indexOf('"') > -1) {
-                  console.log('\n[gitbook-plugin-youtubex]('+this.ctx.file.path+') Error: input ID contains invalid character(s).');
                   return null;
                 }
 
@@ -31,8 +25,9 @@ module.exports = {
                     html.push('   <div class="youtubex" id="' + vid + '" />');
                     html.push('</div>');
                     return html.join('');
-                } else
-                    return '<blockquote><b>Embedded Video:<b>&nbsp;<a href="https://www.youtube.com/watch?v=' + vid + '">' + 'https://www.youtube.com/watch?v=' + vid + '</a></blockquote>';
+                }
+
+                return '<blockquote><b>' + embedString + '<b>&nbsp;<a href="https://www.youtube.com/watch?v=' + vid + '">' + 'https://www.youtube.com/watch?v=' + vid + '</a></blockquote>';
             }
         },
         m: {

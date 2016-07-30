@@ -6,6 +6,24 @@
     "engines": {
         "gitbook": ">1.x.x"
     },
+    "gitbook": {
+        "properties": {
+            "embedDescription": {
+                "type": "object",
+                "description": "Text that is prepended embed replacement link in eBooks/PDFs",
+                "properties": {
+                    "de": {
+                        "type": "string",
+                        "default": "Eingebettetes Video:"
+                    },
+                    "default": {
+                        "type": "string",
+                        "default": "Embedded video:"
+                    }
+                }
+            }
+        }
+    },
     "homepage": "https://github.com/ymcatar/gitbook-plugin-youtubex",
     "repository": {
         "type": "git",
