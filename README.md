@@ -49,6 +49,7 @@ See the plugin here: [Click here](http://ymcatar.gitbooks.io/gitbook-test/conten
 ## Changelog
 
 * 2.0 Releases:
+  * **2.0.2**: bug fix regarding YouTube iFrame API loading.
   * **2.0.1**: fix loading issues.
   * **2.0.0**: (requires gitbook 3.0+ now)
     * auto scroll to video when time marker clicked (thanks @noerw)
