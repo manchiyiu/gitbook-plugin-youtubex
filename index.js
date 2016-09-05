@@ -1,3 +1,7 @@
+function normalizeVideoId(a) {
+  return a.replace(/\\_/g, "_");
+}
+
 module.exports = {
 
   website: {
@@ -10,7 +14,7 @@ module.exports = {
     youtube: {
       process: function (blk) {
         var cfg = this.config.values.pluginsConfig["youtubex"],
-          vid = blk.body.trim().replace(/['"\/]+/g, ''),
+          vid = normalizeVideoId(blk.body.trim().replace(/['"\/]+/g, '')),
           lang = this.options.language,
           embedString = cfg.embedDescription[lang] || cfg.embedDescription["default"];
 
